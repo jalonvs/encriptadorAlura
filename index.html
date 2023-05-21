@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body class="">
+    <div class="contenedor">
+        <header class="cabecera">
+            <picture class="logo"><img id="logo-img" class="logo-img" src="./imagenes/logoavs-light.png" alt="Logo AVS"></picture>
+            <h1 class="titulo">Encriptador de textos</h1>
+            <span class="dark-mode">
+                <label for="cambio" class="cambio" id="lbl-cambio"><i class="fa-sharp fa-solid fa-moon"></i></label>
+                <input type="checkbox" class="chk-cambio" name="cambio" id="cambio">
+            </span>
+        </header>
+        <main class="principal">
+            <section class="section_one">
+                <span class="advertencia"><i class="fa-solid fa-circle-exclamation"></i> Sólo se permite uso de letras minúsculas y sin acento.</span>
+                <img id="imagen-encriptador" class="imagen-encriptador" src="./imagenes/hidden-light.png" alt="">
+                <img class="logo_oracleAlura" src="./imagenes/logo_oracleAlura.svg" alt="">
+            </section>
+            <section class="section_two">
+                <textarea name="" id="texto" cols="30" rows="10" class="textarea texto" placeholder="ingrese un texto aquí..."></textarea>
+                <textarea name="" id="" cols="30" rows="10" class="textarea resultado"></textarea>
+                <section class="botones">
+                    <button class="boton btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="boton btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    <button class="boton btn-copiar" onclick="btnCopiar()">Copiar</button>
+                    <button class="boton btn-borrar" onclick="btnBorrar()">Borrar</button>
+                </section>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="copy"><i class="fa-sharp fa-regular fa-copyright"></i> 2023 Alonso Valverde - Challenge Oracle ONE - G5 
+            </div>
+            <div class="social">
+                <a href="http://"><i class="fa-brands fa-github"></i></span></a>
+                <a href="https://www.linkedin.com/in/alonsovalverdes/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/662de341bc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

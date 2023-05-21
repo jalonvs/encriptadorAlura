@@ -1,0 +1,441 @@
+@import url("reset.css");
+:root{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    --bg-light: #3A98B9;
+    --bg-dark: #222831;
+    --color-light1: #EEEEEE;
+    --color-light2: #F9F9F9;
+    --color-light3: #3A98B9;
+    --color-dark1: #FFD369;
+    --color-dark2: #393E46;
+    --color-dark3: #EEEEEE;
+   --color-btn: #FFFFFF;
+}
+body{
+    background: var(--bg-light);
+    --color1: var(--color-light1);
+    --color2: var(--color-light2);
+    --color3: var(--color-light3);
+    transition: all 1.8s ease;
+}
+.dark{
+    background: var(--bg-dark);
+    --color1: var(--color-dark1);
+    --color2: var(--color-dark2);
+    --color3: var(--color-dark3);
+}
+.contenedor{
+    width: 92%;
+    margin: 1rem auto;
+}
+.cabecera{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-img{
+    width: 3.5rem;
+}
+.dark-mode{
+    font-size: 2rem;
+    color: var(--color1);
+    text-align: end; 
+}
+.cambio{
+    cursor: pointer;
+}
+.chk-cambio{
+    display: none;
+}
+.titulo{
+    width: 100%;
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-style: italic;
+    color:var(--color1);
+    text-align: center;
+    margin: 2rem auto;
+    order: 2;
+}
+.principal{
+    width: 100%;
+}
+.advertencia{
+    color:var(--color1);
+    display: block;
+    text-align: center;
+}
+.advertencia i{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: var(--color1);
+}
+.imagen-encriptador{
+    display: none;
+}
+.logo_oracleAlura{
+    display: none;
+}
+.section_two{
+    width: 100%;
+}
+.textarea{
+    box-sizing: border-box;
+    width: 100%;
+    height: 18rem;
+    margin: 0.3rem auto;
+    border-radius: 1rem;
+    border: 0.3rem solid var(--color1);
+    text-transform: lowercase;
+    outline: none;
+    resize: none;
+    padding: 1rem;
+    background-color: var(--color2);
+    font-size: 1.2rem;
+    color: var(--color3);
+}
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.boton{
+    width: 45%;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 3rem;
+    border: 0.3rem solid var(--color1);
+    margin: 0.3rem 0.5rem;
+    background: var(--color-btn);
+    cursor: pointer;
+    transition: all 1.2s ease;
+}
+.botones :hover{
+    background: var(--color1);
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 2rem;
+    color:var(--color1);
+}
+.copy{
+    width: 85%;
+    font-size: 1.05rem
+}
+.social{
+    width: 15%;
+    font-size: 1.5rem;
+    text-align: right;
+}
+.social i{
+    color:var(--color1);
+    margin-left: 0.2rem;
+}
+.social a:link{
+    text-decoration: none;
+}
+
+/* Móviles medianos */
+@media (min-width:480px) and (max-width:599px) {
+    :root{
+        font-size: 75%;
+    }
+    .contenedor{
+        width: 85%;
+    }
+    .copy{
+        font-size: 1.2rem
+    }
+    .social{
+        font-size: 1.8rem;
+    }
+}
+
+/* Tablets */
+@media (min-width:600px) {
+    :root{
+        font-size: 81.25%;
+    }
+    .contenedor{
+        width: 80%;
+        height: 90vh;
+    }
+    .cabecera{
+        flex-wrap: nowrap;
+    }
+    .titulo{
+        order: 0;
+    }
+    .advertencia{
+        font-size: 1.2rem;
+    }
+    .advertencia i{
+        font-size: 1.4rem;
+    }
+    .section_two{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem auto;
+    }
+    .textarea{
+        box-sizing: border-box;
+        width: 46%;
+        height: 25rem;
+    }
+    .botones{
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        order: 2;
+        justify-content: end;
+    }
+    .boton{
+        font-size: 1rem;
+    }
+    .copy{
+        font-size: 1rem
+    }
+    .social{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:768px) {
+    :root{
+        font-size: 87.5%;
+    }
+    .contenedor{
+        width: 90%;
+    }
+    .cabecera{
+        flex-wrap: nowrap;
+    }
+    .titulo{
+        order: 0;
+    }
+    .principal{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3rem auto;
+    }
+    .section_one{
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .advertencia i{
+        font-size: 1rem;
+    }
+    .advertencia{
+        font-size: 0.85rem;
+        margin: 0;
+    }
+    .imagen-encriptador{
+        width: 100%;
+        display:block;
+    }
+    .logo_oracleAlura{
+        width: 80%;
+        display:block;
+        justify-content: center;
+        margin: 1rem auto;
+    }
+    .section_two{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem auto;
+    }
+    .textarea{
+        box-sizing: border-box;
+        width: 96%;
+        height: 20rem;
+        margin: 0.5rem auto;
+    }
+    .botones{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        order: 2;
+        margin-top: 1rem;
+    }
+    .boton{
+        width: 45%;
+        height: 2.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0.5rem auto;
+    }
+    .copy{
+        font-size: 1.3rem
+    }
+    .social{
+        font-size: 2rem;
+    }
+}
+/* Laptops y PC */
+@media (min-width:1200px) {
+    :root{
+        font-size: 81.25%;
+    }
+    .contenedor{
+        width: 90%;
+        height: 90vh;
+    }
+    .cabecera{
+        flex-wrap: nowrap;
+    }
+    .titulo{
+        width: 100%;
+        font-size: 3rem;
+        margin: 1rem auto;
+        order: 0;
+    }
+    .principal{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .section_one{
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .advertencia i{
+        font-size: 1.5rem;
+    }
+    .advertencia{
+        font-size: 1rem;
+    }
+    .imagen-encriptador{
+        width: 90%;
+        display:block;
+    }
+    .logo_oracleAlura{
+        width: 70%;
+        display:block;
+        margin: 1rem auto;
+    }
+    .section_two{
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem auto;
+    }
+    .textarea{
+        box-sizing: border-box;
+        width: 46%;
+        height: 30rem;
+    }
+    .botones{
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        order: 2;
+        justify-content: end;
+    }
+    .boton{
+        width: 22.5%;
+        height: 2.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0 auto;
+    }
+    .copy{
+        font-size: 1.3rem
+    }
+    .social{
+        font-size: 2rem;
+    }
+}
+/* PC XL */
+@media (min-width:1440px) {
+    :root{
+        font-size: 100%;
+    }
+    .contenedor{
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .cabecera{
+        flex-wrap: nowrap;
+    }
+    .logo-img{
+        width: 5rem;
+    }
+    .dark-mode{
+        font-size: 3rem;
+    }
+    .titulo{
+        width: 100%;
+        font-size: 4rem;
+        margin: 1rem auto;
+        order: 0;
+    }
+    .principal{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.5rem auto;
+    }
+    .section_one{
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .advertencia i{
+        font-size: 1.5rem;
+    }
+    .advertencia{
+        font-size: 1.4rem;
+    }
+    .imagen-encriptador{
+        width: 80%;
+        display:block;
+    }
+    .logo_oracleAlura{
+        width: 70%;
+        display:block;
+        margin: 0 auto;
+    }
+    .section_two{
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem auto;
+    }
+    .textarea{
+        box-sizing: border-box;
+        width: 46%;
+        height: 40rem;
+        font-size: 1.5rem;
+    }
+    .botones{
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        order: 2;
+        justify-content: end;
+    }
+    .boton{
+        font-size: 1.2rem;
+    }
+    .footer{
+        margin: 1rem auto 0 auto;
+    }
+    .copy{
+        font-size: 1.6rem
+    }
+    .social{
+        font-size: 2.5rem;
+    }
+}
